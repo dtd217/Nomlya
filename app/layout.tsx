@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" data-kantu="1">
       <body className={`${nunitoSans.className} antialiased`}>
         <ClientOnly>
-          <Modal isOpen={false}/>
+          <Modal isOpen={true} title="Hello" actionLabel="CLICK HERE"  />
           <Navbar />
         </ClientOnly>
         {children}
