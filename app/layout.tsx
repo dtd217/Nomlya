@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import ClientOnly from "./components/ClientOnly";
 import Modal from "./components/modals/Modal";
+import RegisterModal from "./components/modals/RegisterModal";
 
 const nunitoSans = Nunito({
   subsets: ["latin"],
@@ -23,7 +24,7 @@ export default function RootLayout({
     <html lang="en" data-kantu="1">
       <body className={`${nunitoSans.className} antialiased`}>
         <ClientOnly>
-          <Modal isOpen={true} title="Hello" actionLabel="CLICK HERE"  />
+          <RegisterModal />
           <Navbar />
         </ClientOnly>
         {children}
